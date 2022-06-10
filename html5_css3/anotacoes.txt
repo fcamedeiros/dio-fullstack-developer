@@ -33,7 +33,7 @@ O <p> representa um parágrafo, mas ele não suporta apenas texto, podemos adici
 
 <a>
 Um outro elemento interessante e extremamente necessário na web é o <a> - que significa anchor/âncora, ele representa um hyperlink, é ele que interliga vários conteúdos e páginas na web.
-- O href representa o hyperlink para onde sua âncora aponta
+- O href representa o hyperlink para onde sua âncora aponta (mailto, tel)
 - O target neste momento vai servir para nos ajudar a abrir nossos links em outra aba do navegador usando o valor _blank.
 
 Imagens
