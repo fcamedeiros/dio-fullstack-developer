@@ -6,6 +6,6 @@ Repositório criado para ser utilizado no Bootcamp.
 - Html5 e Css3
 
 ## Links Úteis
-[Sintaxe Básica Markdown](https://www.markdownguide.org/basic-syntax/)
-[Visual Studio Code](https://code.visualstudio.com/download)
-[Tiny NG](https://tinypng.com/)
+- [Sintaxe Básica Markdown](https://www.markdownguide.org/basic-syntax/)
+- [Visual Studio Code](https://code.visualstudio.com/download)
+- [Tiny NG](https://tinypng.com/)
