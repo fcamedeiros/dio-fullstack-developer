@@ -8,3 +8,4 @@ Repositório criado para ser utilizado no Bootcamp.
 ## Links Úteis
 [Sintaxe Básica Markdown](https://www.markdownguide.org/basic-syntax/)
 [Visual Studio Code](https://code.visualstudio.com/download)
+[Tiny NG](https://tinypng.com/)
