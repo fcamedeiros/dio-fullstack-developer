@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - flex-grow</title>
+    <style>
+        h1 {
+            height: 0;
+            margin-bottom: 31px;
+        }
+
+        p {
+            margin-top: 10px;
+            margin-bottom: 15px;
+        }
+
+        .flex-container {
+            display: flex;
+            border: 2px solid black;
+            max-width: 300px;
+            margin-bottom: 20px;
+            justify-content: center;
+        }
+        
+        .item {
+            background-color: orangered;
+            margin: 5px;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        .flex-grow0 {
+            flex-grow: 0;
+        }
+
+        .flex-grow1 {
+            flex-grow: 1;
+        }
+
+        .flex-grow2 {
+            flex-grow: 2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Flex-Grow: 0</h1>
+    <p>
+        Note que pelo fato do flex-grow ser 0 e estar definido o justify-content, 
+        neste bloco não funciona o flex-grow
+    </p>
+    <div class="flex-container">
+        <div class="item flex-grow0">A</div>
+        <div class="item flex-grow0">B</div>
+        <div class="item flex-grow0">C</div>
+        <div class="item flex-grow0">D</div>
+    </div>
+
+    <h1>Flex-Grow: 1</h1>
+    <p>Todos itens do mesmo tamanho</p>
+    <div class="flex-container">
+        <div class="item flex-grow1">A</div>
+        <div class="item flex-grow1">B</div>
+        <div class="item flex-grow1">C</div>
+        <div class="item flex-grow1">D</div>
+    </div>
+
+    <h1>Flex-Grow: alternado</h1>
+    <p>Alternando o Flex-grow, note que o B e C são maiores que o A e D</p>
+    <div class="flex-container">
+        <div class="item flex-grow1">A</div>
+        <div class="item flex-grow2">B</div>
+        <div class="item flex-grow2">C</div>
+        <div class="item flex-grow1">D</div>
+    </div>
+
+    <h1>Flex-Grow: 2</h1>
+    <p>Embora o flex-grow seja 2, respeita o tamanho dos itens</p>
+    <div class="flex-container">
+        <div class="item flex-grow2">AAAAAA</div>
+        <div class="item flex-grow2">BBB</div>
+        <div class="item flex-grow2">C</div>
+        <div class="item flex-grow2">D</div>
+    </div>
+</body>
+</html>
