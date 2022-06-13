@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Fundamentos - align items</title>
+        <style>
+            h1 {
+                height: 0;
+                margin-bottom: 31px;
+            }
+
+            p {
+                margin-top: 10px;
+                margin-bottom: 15px;
+            }
+
+            .container {
+                max-width: 350px;
+                border: 1px solid black;
+                display: flex;
+                flex-direction: row;
+            }
+
+            .item {
+                background-color: blueviolet;
+                margin: 5px;
+                color: white;
+                text-align: center;
+                flex: 1;
+            }
+
+            .central {
+                height: 300px;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .central .item {
+                flex: 0;
+                padding: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Centro Total</h1>
+        <p>Alinha o item (pela linha e não coluna) exatamente ao centro do container</p>
+        <section class="container central">
+            <div class="item">
+                Soldado brasileiro morto na guerra da Ucrânia era formado em enfermagem.
+            </div>
+        </section>
+    </body>
+</html>

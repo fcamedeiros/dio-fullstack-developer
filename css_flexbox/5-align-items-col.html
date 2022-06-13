@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Fundamentos - align items</title>
+        <style>
+            h1 {
+                height: 0;
+                margin-bottom: 31px;
+            }
+
+            p {
+                margin-top: 10px;
+                margin-bottom: 15px;
+            }
+
+            .container {
+                max-width: 350px;
+                border: 1px solid black;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .item {
+                background-color: blueviolet;
+                margin: 5px;
+                color: white;
+                text-align: center;
+                flex: 1;
+            }
+
+            .center {
+                align-items: center;
+            }
+
+            .stretch {
+                align-items: stretch;
+            }
+            
+            .flex-start {
+                align-items: flex-start;
+            }
+
+            .flex-end {
+                align-items: flex-end;
+            }
+
+            .baseline {
+                align-items: baseline;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Center</h1>
+        <p>Itens alinhados a partir do centro vertical do container</p>
+        <section class="container center">
+            <div class="item">Item 1</div>
+            <div class="item">Css3 verificando o func. aqui</div>
+            <div class="item">Item 3 mais algum texto. Teste</div>
+        </section>
+
+        <h1>Stretch</h1>
+        <p>Itens alinhados totalmente ao centro do container</p>
+        <section class="container stretch">
+            <div class="item">Item 1</div>
+            <div class="item">Css3 verificando o func. aqui</div>
+            <div class="item">Item 3 mais algum texto. Testando...</div>
+        </section>
+
+        <h1>Flex-Start</h1>
+        <p>Itens alinhados a partir da esquerda do container</p>
+        <section class="container flex-start">
+            <div class="item">Item 1</div>
+            <div class="item">Css3 verificando o func. aqui</div>
+            <div class="item">Item 3 mais algum texto. Testando...</div>
+        </section>
+
+        <h1>Flex-End</h1>
+        <p>Itens alinhados a partir da direita do container</p>
+        <section class="container flex-end">
+            <div class="item">Item 1</div>
+            <div class="item">Css3 verificando o func. aqui</div>
+            <div class="item">Item 3 mais algum texto. Testando...</div>
+        </section>
+
+        <h1>Baseline</h1>
+        <p>Alinhado a esquerda, utiliza a linha base do item como orientação</p>
+        <section class="container baseline">
+            <div class="item"><br>Item 1</div>
+            <div class="item">Css3 verificando o func. aqui</div>
+            <div class="item">Item 3 mais algum texto. Testando...</div>
+        </section>
+    </body>
+</html>
