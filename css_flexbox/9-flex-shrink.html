@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Fundamentos - Flex-Shrink</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            .flex-container {
+                display: flex;
+                border: 1px solid black;
+                max-width: 350px;
+                margin-bottom: 10px;
+            }
+
+            .item {
+                margin: 5px;
+                background-color: orangered;
+                font-size: 24px;
+                text-align: center;
+            }
+
+            .s0 {
+                flex-shrink: 0;                
+                flex-basis: 100px;
+            }
+
+            .s1 {
+                flex-shrink: 1;
+            }
+
+            .s2 {
+                flex-shrink: 2;
+            }
+
+            .s3 {
+                flex-shrink: 3;
+            }
+
+            .f1 {
+                flex-grow: 1;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Shrink: 1</h1>
+        <p>Itens de tamanho 1 e seu crescimento vai ser definido a partir do tamanho do container. O item tem um tamanho mínimo em 1.</p>
+        <div class="flex-container">
+            <div class="item s1 f1">A</div>
+            <div class="item s1 f1">B</div>
+            <div class="item s1 f1">C</div>
+            <div class="item s1 f1">D</div>
+            <div class="item s1 f1">E</div>
+        </div>
+
+        <p>Conteúdos diferentes, comprimiu todos e o item de maior texto com quebra de linha, expandiu e quebrou o grow para os menores. A quebra de linha não permitiu que grow fosse aplicado nos menores (não tem sobra de espaço)</p>
+        <div class="flex-container">
+            <div class="item s1 f1">A</div>
+            <div class="item s1 f1">The generated Lorem Ipsum</div>
+            <div class="item s1 f1">C</div>
+            <div class="item s1 f1">D</div>
+        </div>
+
+        <h1>Shrink: 0 - basis 100px</h1>
+        <p>Shrink em 0, estou dizendo para os itens que ele não vai permitir a diminuição. Basis em 100px, defino que o item precisa ter o mínimo de 100px de width porém, com o shrink em 0, estou dizendo que não permito a compressão dos itens. Em virtude disso, ocorre a vazão do container</p>
+        <div class="flex-container">
+            <div class="item s0 f1">A</div>
+            <div class="item s0 f1">The generated</div>
+            <div class="item s0 f1">C generated</div>
+            <div class="item s0 f1">D</div>
+        </div>
+
+        <h1>Shrink: mix - basis 100px</h1>
+        <p>Os itens com Shrink 2 podem ser comprimidos em até 2x tal qual seja possível; itens com Shrink em 3, podem ser comprimidos em até 3x</p>
+        <div class="flex-container">
+            <div class="item s1 f1">A</div>
+            <div class="item s2 f1">The generated</div>
+            <div class="item s2 f1">C generated</div>
+            <div class="item s3 f1">D</div>
+        </div>
+    </body>
+</html>
