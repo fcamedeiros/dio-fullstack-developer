@@ -2,9 +2,12 @@
 Repositório criado para ser utilizado no Bootcamp.
 
 ## Conteúdo
-- Desafio Git/Git Hub
 - Html5 e Css3
 - Css com FlexBox
+
+## Desafios
+- Criar o repositório no Git/Git Hub
+- Recriar a página de login do Instagram
 
 ## Links Úteis
 - [Sintaxe Básica Markdown](https://www.markdownguide.org/basic-syntax/)
