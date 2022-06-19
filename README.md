@@ -9,6 +9,7 @@ Repositório criado para ser utilizado no Bootcamp.
 ## Desafios
 - Criar o repositório no Git/Git Hub
 - Recriar a página de login do Instagram
+- Criar uma página de To-Do List que permita adicionar items e ao realizar, riscar o item finalizado
 
 ## Links Úteis
 - [Sintaxe Básica Markdown](https://www.markdownguide.org/basic-syntax/)
