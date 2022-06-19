@@ -4,6 +4,7 @@ Repositório criado para ser utilizado no Bootcamp.
 ## Conteúdo
 - Html5 e Css3
 - Css com FlexBox
+- JavaScript
 
 ## Desafios
 - Criar o repositório no Git/Git Hub
