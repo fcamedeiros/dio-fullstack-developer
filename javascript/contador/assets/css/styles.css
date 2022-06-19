@@ -1,0 +1,54 @@
+@import url('http://fonts.googleapis.com/css?family=Open+Sans:wght@300;600&display=swap');
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(177, 255, 255);
+}
+
+.counter {
+    display: flex;
+}
+
+.currentNumberPostivo {
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+    font-size: 16pt;
+    color: black;
+}
+
+.currentNumberNegativo {
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+    font-size: 16pt;
+    color: red;
+}
+
+.botaoAtivo {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: 2px solid lightcoral;
+    background-color: rgb(241, 214, 214);
+    color: lightcoral;
+    font-size: 16pt;
+    text-align: center;
+}
+
+.botaoDesativo {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: 2px solid grey;
+    background-color: rgb(255, 255, 255);
+    color: grey;
+    font-size: 16pt;
+    text-align: center;
+}
