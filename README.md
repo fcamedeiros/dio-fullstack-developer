@@ -19,3 +19,4 @@ Repositório criado para ser utilizado no Bootcamp.
 ## Extensões VSCode
 - Live Server Preview (Preview your HTML file with localhost server live-reloading enabled)
 - Markdown Preview Enhanced (Preview files .MD on VsCode)
+- Live Server (Launch a development local Server with live reload feature for static & dynamic pages)
