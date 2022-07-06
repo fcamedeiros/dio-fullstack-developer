@@ -6,6 +6,7 @@ Repositório criado para ser utilizado no Bootcamp.
 - Css com FlexBox
 - JavaScript
 - TypeScript
+- Angular
 
 ## Desafios
 - Criar o repositório no Git/Git Hub
